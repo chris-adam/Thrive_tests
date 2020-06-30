@@ -1,0 +1,547 @@
+~
+    "pilus": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~@,
+        "components": ~
+            "pilus": ~@
+        @,
+        "shouldScale": false,
+        "prokaryoteChance": 0.5,
+        "chanceToCreate": 0.5,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Pilus.tscn",
+        "name": "pilus"
+    @,
+    "rusticyanin": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "iron_chemolithoautotrophy": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 2,
+        "chanceToCreate": 0.5,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Rusticyanin.tscn",
+        "name": "rusticyanin"
+    @,
+    "nitrogenase": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "glycolysis": 1,
+            "nitrogenaseReaction": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 2,
+        "chanceToCreate": 1,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Nitrogenase.tscn",
+        "name": "nitrogenase"
+    @,
+    "protoplasm": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "glycolysis": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 2,
+        "chanceToCreate": 0,
+        "mass": {},
+        "displayScene": "",
+        "name": "protoplasm"
+    @,
+    "chemoSynthesizingProteins": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "glycolysis": 1,
+            "bacterial_ChemoSynthesis": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 2,
+        "chanceToCreate": 0.5,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/ChemoSynthesizingProteins.tscn",
+        "name": "chemoSynthesizingProteins"
+    @,
+    "oxytoxyProteins": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "glycolysis": 1,
+            "bacterial_oxytoxySynthesis": 1
+        @,
+        "components": ~
+            "processor": ~
+                "colourChangeFactor": 1
+            @,
+            "storage": ~
+                "capacity": {}
+            @,
+            "agentVacuole": ~
+                "process": "bacterial_oxytoxySynthesis",
+                "compound": "oxytoxy"
+            @
+        @,
+        "prokaryoteChance": 0.5,
+        "chanceToCreate": 1,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/OxytoxyProteins.tscn",
+        "name": "oxytoxyProteins"
+    @,
+    "chromatophore": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "glycolysis": 1,
+            "chromatophore_photosynthesis": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 2,
+        "chanceToCreate": 0.5,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Chromatophore.tscn",
+        "name": "chromatophore"
+    @,
+    "metabolosome": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "protein_respiration": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 2,
+        "chanceToCreate": 0.5,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Metabolosome.tscn",
+        "name": "metabolosome"
+    @,
+    "nitrogenfixingplastid": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @,
+            ~
+                "r": -1,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "nitrogenFixing": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 0,
+        "chanceToCreate": 1,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/NitrogenFixingPlastid.tscn",
+        "name": "nitrogenfixingplastid"
+    @,
+    "chemoplast": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @,
+            ~
+                "r": -1,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "chemoSynthesis": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 0,
+        "chanceToCreate": 1,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Chemoplast.tscn",
+        "name": "chemoplast"
+    @,
+    "flagellum": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~@,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "movement": ~
+                "torque": 300,
+                "momentum": 50
+            @
+        @,
+        "prokaryoteChance": 2,
+        "chanceToCreate": 6,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Flagellum.tscn",
+        "displaySceneModelPath": "Armature001/Skeleton/flagella",
+        "displaySceneAnimation": "AnimationPlayer",
+        "name": "flagellum"
+    @,
+    "vacuole": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~@,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @
+        @,
+        "prokaryoteChance": 0,
+        "chanceToCreate": 3,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Vacuole.tscn",
+        "name": "vacuole"
+    @,
+    "mitochondrion": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @,
+            ~
+                "r": -1,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "respiration": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 0,
+        "chanceToCreate": 3,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Mitochondrion.tscn",
+        "name": "mitochondrion"
+    @,
+    "oxytoxy": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "oxytoxySynthesis": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "agentVacuole": ~
+                "process": "oxytoxySynthesis",
+                "compound": "oxytoxy"
+            @
+        @,
+        "prokaryoteChance": 0,
+        "chanceToCreate": 1,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Oxytoxy.tscn",
+        "name": "oxytoxy"
+    @,
+    "chloroplast": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @,
+            ~
+                "r": -1,
+                "q": 0
+            @,
+            ~
+                "r": -1,
+                "q": 1
+            @
+        ],
+        "processes": ~
+            "photosynthesis": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 0,
+        "chanceToCreate": 1,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Chloroplast.tscn",
+        "name": "chloroplast"
+    @,
+    "cytoplasm": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @
+        ],
+        "processes": ~
+            "glycolysis_cytoplasm": 1
+        @,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "processor": ~
+                "colourChangeFactor": 1
+            @
+        @,
+        "prokaryoteChance": 1,
+        "chanceToCreate": 1,
+        "mass": {},
+        "displayScene": "",
+        "name": "cytoplasm"
+    @,
+    "nucleus": ~
+        "mpCost": {},
+        "initialComposition": ~
+            "ammonia": {},
+            "phosphates": {}
+        @,
+        "hexes": [
+            ~
+                "r": 0,
+                "q": 0
+            @,
+            ~
+                "r": 0,
+                "q": 1
+            @,
+            ~
+                "r": 1,
+                "q": 0
+            @,
+            ~
+                "r": -1,
+                "q": 0
+            @,
+            ~
+                "r": -1,
+                "q": 1
+            @,
+            ~
+                "r": 1,
+                "q": -1
+            @,
+            ~
+                "r": 0,
+                "q": -1
+            @,
+            ~
+                "r": 1,
+                "q": 1
+            @,
+            ~
+                "r": 2,
+                "q": 0
+            @,
+            ~
+                "r": 2,
+                "q": -1
+            @
+        ],
+        "processes": ~@,
+        "components": ~
+            "storage": ~
+                "capacity": {}
+            @,
+            "nucleus": ~@
+        @,
+        "shouldScale": false,
+        "prokaryoteChance": 0,
+        "chanceToCreate": 0,
+        "mass": {},
+        "displayScene": "res://assets/models/organelles/Nucleus.tscn",
+        "name": "nucleus"
+    @
+@

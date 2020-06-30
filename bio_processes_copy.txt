@@ -1,0 +1,132 @@
+~
+    "respiration": ~
+        "name": "Respiration",
+        "inputs": ~
+            "oxygen": {},
+            "glucose": {}
+        @,
+        "outputs": ~
+            "atp": {}
+        @
+    @,
+    "glycolysis": ~
+        "name": "Glycolysis",
+        "inputs": ~
+            "glucose": {}
+        @,
+        "outputs": ~
+            "atp": {}
+        @
+    @,
+    "glycolysis_cytoplasm": ~
+        "name": "Cytoplasm Glycolysis",
+        "inputs": ~
+            "glucose": {}
+        @,
+        "outputs": ~
+            "atp": {}
+        @
+    @,
+    "photosynthesis": ~
+        "name": "Photosynthesis",
+        "inputs": ~
+            "carbondioxide": {},
+            "sunlight": {}
+        @,
+        "outputs": ~
+            "glucose": {}
+        @
+    @,
+    "oxytoxySynthesis": ~
+        "name": "Oxytoxy Synthesis",
+        "inputs": ~
+            "oxygen": {},
+            "atp": {}
+        @,
+        "outputs": ~
+            "oxytoxy": {}
+        @
+    @,
+    "bacterial_oxytoxySynthesis": ~
+        "name": "Oxytoxy Synthesis",
+        "inputs": ~
+            "oxygen": {},
+            "atp": {}
+        @,
+        "outputs": ~
+            "oxytoxy": {}
+        @
+    @,
+    "chemoSynthesis": ~
+        "name": "Chemo Synthesis",
+        "inputs": ~
+            "carbondioxide": {},
+            "hydrogensulfide": {}
+        @,
+        "outputs": ~
+            "glucose": {}
+        @
+    @,
+    "bacterial_ChemoSynthesis": ~
+        "name": "Chemo Synthesis",
+        "inputs": ~
+            "carbondioxide": {},
+            "hydrogensulfide": {}
+        @,
+        "outputs": ~
+            "glucose": {}
+        @
+    @,
+    "nitrogenFixing": ~
+        "name": "Aerobic Nitrogen Fixing",
+        "inputs": ~
+            "oxygen": {},
+            "nitrogen": {},
+            "atp": {}
+        @,
+        "outputs": ~
+            "ammonia": {}
+        @
+    @,
+    "nitrogenaseReaction": ~
+        "name": "Anaerobic Nitrogen Fixation",
+        "inputs": ~
+            "nitrogen": {},
+            "atp": {}
+        @,
+        "outputs": ~
+            "ammonia": {}
+        @
+    @,
+    "protein_respiration": ~
+        "name": "Respiration",
+        "inputs": ~
+            "oxygen": {},
+            "glucose": {}
+        @,
+        "outputs": ~
+            "atp": {}
+        @
+    @,
+    "chromatophore_photosynthesis": ~
+        "name": "Photosynthesis",
+        "inputs": ~
+            "carbondioxide": {},
+            "sunlight": {}
+        @,
+        "outputs": ~
+            "glucose": {}
+        @
+    @,
+    "iron_chemolithoautotrophy": ~
+        "name": "Iron Chemolithoautotrophy",
+        "inputs": ~
+            "oxygen": {},
+            "carbondioxide": {},
+            "iron": {}
+        @,
+        "outputs": ~
+            "atp": {}
+        @
+    @
+@

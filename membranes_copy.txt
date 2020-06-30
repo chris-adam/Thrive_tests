@@ -1,0 +1,80 @@
+~
+    "single": ~
+        "cellWall": false,
+        "normalTexture": "res://assets/textures/FresnelGradient.png",
+        "damagedTexture": "res://assets/textures/FresnelGradientDamaged.png",
+        "movementFactor": {},
+        "movementWigglyness": 1,
+        "osmoregulationFactor": {},
+        "resourceAbsorptionFactor": {},
+        "hitpoints": {},
+        "physicalResistance": {},
+        "toxinResistance": {},
+        "editorCost": {}
+    @,
+    "double": ~
+        "cellWall": false,
+        "normalTexture": "res://assets/textures/DoubleCellMembrane.png",
+        "damagedTexture": "res://assets/textures/DoubleCellMembraneDamaged.png",
+        "movementFactor": {},
+        "movementWigglyness": 1,
+        "osmoregulationFactor": {},
+        "resourceAbsorptionFactor": {},
+        "hitpoints": {},
+        "physicalResistance": {},
+        "toxinResistance": {},
+        "editorCost": {}
+    @,
+    "cellulose": ~
+        "cellWall": true,
+        "normalTexture": "res://assets/textures/CellWallGradient.png",
+        "damagedTexture": "res://assets/textures/CellWallGradientDamaged.png",
+        "movementFactor": {},
+        "movementWigglyness": 1,
+        "osmoregulationFactor": {},
+        "resourceAbsorptionFactor": {},
+        "hitpoints": {},
+        "physicalResistance": {},
+        "toxinResistance": {},
+        "editorCost": {}
+    @,
+    "chitin": ~
+        "cellWall": true,
+        "normalTexture": "res://assets/textures/ChitinCellWallGradient.png",
+        "damagedTexture": "res://assets/textures/ChitinCellWallGradientDamaged.png",
+        "movementFactor": {},
+        "movementWigglyness": 1,
+        "osmoregulationFactor": {},
+        "resourceAbsorptionFactor": {},
+        "hitpoints": {},
+        "physicalResistance": {},
+        "toxinResistance": {},
+        "editorCost": {}
+    @,
+    "calcium_carbonate": ~
+        "cellWall": true,
+        "normalTexture": "res://assets/textures/CalciumCarboMembrane.png",
+        "damagedTexture": "res://assets/textures/CalciumCarboMembraneDamaged.png",
+        "movementFactor": {},
+        "movementWigglyness": 1,
+        "osmoregulationFactor": {},
+        "resourceAbsorptionFactor": {},
+        "hitpoints": {},
+        "physicalResistance": {},
+        "toxinResistance": {},
+        "editorCost": {}
+    @,
+    "silica": ~
+        "cellWall": true,
+        "normalTexture": "res://assets/textures/SilicaMembrane.png",
+        "damagedTexture": "res://assets/textures/SilicaMembraneDamaged.png",
+        "movementFactor": {},
+        "movementWigglyness": 1,
+        "osmoregulationFactor": {},
+        "resourceAbsorptionFactor": {},
+        "hitpoints": {},
+        "physicalResistance": {},
+        "toxinResistance": {},
+        "editorCost": {}
+    @
+@

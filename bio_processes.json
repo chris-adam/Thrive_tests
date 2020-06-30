@@ -1,0 +1,132 @@
+{
+    "respiration": {
+        "name": "Respiration",
+        "inputs": {
+            "oxygen": 1,
+            "glucose": 0.08
+        },
+        "outputs": {
+            "atp": 70
+        }
+    },
+    "glycolysis": {
+        "name": "Glycolysis",
+        "inputs": {
+            "glucose": 0.024
+        },
+        "outputs": {
+            "atp": 2
+        }
+    },
+    "glycolysis_cytoplasm": {
+        "name": "Cytoplasm Glycolysis",
+        "inputs": {
+            "glucose": 0.012
+        },
+        "outputs": {
+            "atp": 4
+        }
+    },
+    "photosynthesis": {
+        "name": "Photosynthesis",
+        "inputs": {
+            "carbondioxide": 0.09,
+            "sunlight": 1
+        },
+        "outputs": {
+            "glucose": 0.03
+        }
+    },
+    "oxytoxySynthesis": {
+        "name": "Oxytoxy Synthesis",
+        "inputs": {
+            "oxygen": 1,
+            "atp": 5
+        },
+        "outputs": {
+            "oxytoxy": 1.5
+        }
+    },
+    "bacterial_oxytoxySynthesis": {
+        "name": "Oxytoxy Synthesis",
+        "inputs": {
+            "oxygen": 0.21,
+            "atp": 5
+        },
+        "outputs": {
+            "oxytoxy": 0.15
+        }
+    },
+    "chemoSynthesis": {
+        "name": "Chemo Synthesis",
+        "inputs": {
+            "carbondioxide": 0.09,
+            "hydrogensulfide": 0.03
+        },
+        "outputs": {
+            "glucose": 0.08
+        }
+    },
+    "bacterial_ChemoSynthesis": {
+        "name": "Chemo Synthesis",
+        "inputs": {
+            "carbondioxide": 0.09,
+            "hydrogensulfide": 0.025
+        },
+        "outputs": {
+            "glucose": 0.04
+        }
+    },
+    "nitrogenFixing": {
+        "name": "Aerobic Nitrogen Fixing",
+        "inputs": {
+            "oxygen": 0.21,
+            "nitrogen": 1,
+            "atp": 2.5
+        },
+        "outputs": {
+            "ammonia": 0.12
+        }
+    },
+    "nitrogenaseReaction": {
+        "name": "Anaerobic Nitrogen Fixation",
+        "inputs": {
+            "nitrogen": 1,
+            "atp": 2.5
+        },
+        "outputs": {
+            "ammonia": 0.06
+        }
+    },
+    "protein_respiration": {
+        "name": "Respiration",
+        "inputs": {
+            "oxygen": 1,
+            "glucose": 0.15
+        },
+        "outputs": {
+            "atp": 35
+        }
+    },
+    "chromatophore_photosynthesis": {
+        "name": "Photosynthesis",
+        "inputs": {
+            "carbondioxide": 0.09,
+            "sunlight": 1
+        },
+        "outputs": {
+            "glucose": 0.025
+        }
+    },
+    "iron_chemolithoautotrophy": {
+        "name": "Iron Chemolithoautotrophy",
+        "inputs": {
+            "carbondioxide": 0.09,
+            "oxygen": 0.21,
+            "iron": 0.03
+        },
+        "outputs": {
+            "atp": 3.5
+        }
+    }
+}
