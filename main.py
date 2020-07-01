@@ -1,8 +1,13 @@
+import sys
+
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Path to the files to update
-DEST_PATH = "C:/Users/Chris/Desktop/Thrive/simulation_parameters/"
+if len(sys.argv) > 1:
+    DEST_PATH = sys.argv[1]
+else:
+    DEST_PATH = "C:/Users/Chris/Desktop/Thrive/simulation_parameters/"
 
 
 def flatten_lst(lst):
@@ -42,12 +47,13 @@ def update_files(client, file_name, sheet_name=None, dest_path=DEST_PATH, extens
         file_w.write(text)
 
 
-# Connect to google sheet
-scope = ['https://spreadsheets.google.com/feeds']
-creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
-client = gspread.authorize(creds)
+if __name__ == "__main__":
+    # Connect to google sheet
+    scope = ['https://spreadsheets.google.com/feeds']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
+    client = gspread.authorize(creds)
 
-# Update files
-for file in ("bio_processes", "biomes", "membranes", "organelles"):
-    update_files(client, file, dest_path=DEST_PATH+"microbe_stage/")
-update_files(client, "Constants", "bio_processes", extension=".cs")
+    # Update files
+    for file in ("bio_processes", "biomes", "membranes", "organelles"):
+        update_files(client, file, dest_path=DEST_PATH+"microbe_stage/")
+    update_files(client, "Constants", "bio_processes", extension=".cs")
